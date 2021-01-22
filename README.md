@@ -1,6 +1,6 @@
-## DAW-Ticket-Interface
+# DAW-Ticket-Interface
 
-# The app was created with Vue.js and ElementUI for educational purposes
+### The app was created with Vue.js and ElementUI for educational purposes
 
 ## Start & watch
 
