@@ -60,15 +60,29 @@ export default {
             this.$router.push('/home');
         },
         onSubmit() {
-            const formData = {
-                title: this.title,
-                content: this.content,
-                color: 'rosie',
-                createdDate: new Date()
+            if(this.title != '' && this.content != '') {
+                const formData = {
+                    title: this.title,
+                    content: this.content,
+                    color: 'rosie',
+                    createdDate: new Date()
+                }
+                this.postTicketData(formData);
+                this.title = '',
+                this.content= ''
+                this.$notify.success({
+                            title: 'Success',
+                            message: 'Your ticket was successfully sent!',
+                            offset: 100
+                });
+            } else {
+                this.$message({
+                    showClose: true,
+                    message: 'Please complete ALL the fields',
+                    type: 'error',
+                    center: true
+                });
             }
-            this.postTicketData(formData);
-            this.title = '',
-            this.content= ''
         }
     },
     directives: {

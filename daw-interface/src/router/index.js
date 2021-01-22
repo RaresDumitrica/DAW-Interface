@@ -29,8 +29,7 @@ const routes = [
     path: '/submit',
     name: 'Submit',
     component: SubmitTicket,
-    beforeEnter(to, from, next) {
-          
+    beforeEnter(to, from, next) {    
       if(store.getters.tokenID !== null) {
         next()
       } else {

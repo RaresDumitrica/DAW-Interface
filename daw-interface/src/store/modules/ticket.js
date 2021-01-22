@@ -44,10 +44,10 @@ const ticket = {
                     headers: {'Access-Control-Allow-Origin': '*'}
                 }).then(response => {
                     context.commit('fillTicketData', {ticketData: response.data})
-                    console.log(response.data)
+                    console.log(response.data);  
                     resolve(response);
-                }).catch(error => {
-                    reject(error);
+                }).catch(errors => {
+                    reject(errors);
                 })
             })
 
