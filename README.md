@@ -2,6 +2,8 @@
 
 ### The app was created with Vue.js and ElementUI for educational purposes
 
+### ! Be sure you have the local backend up and running
+
 ## Start & watch
 
     $ npm run serve
@@ -18,4 +20,4 @@ A common way to update is by doing
     $ git pull
     $ npm install
 
-Be sure you have the local backend up and running
+
